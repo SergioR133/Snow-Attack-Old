@@ -7,5 +7,8 @@ export default class MainScene extends Phaser.Scene {
 
   create() {
     // << LOAD BACKGROUND AND FOREGROUND SCENES IN PARALLEL HERE >>
+    console.log('Scene was created!')
+
+    this.scene.launch('SnowBallFightScene')
   }
 }

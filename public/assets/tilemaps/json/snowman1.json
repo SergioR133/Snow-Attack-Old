@@ -1,0 +1,25 @@
+{ "columns":1,
+ "image":"..\/..\/Downloads\/christmas-village-asset-pack\/snowman1.png",
+ "imageheight":16,
+ "imagewidth":16,
+ "margin":0,
+ "name":"snowman1",
+ "spacing":0,
+ "tilecount":1,
+ "tiledversion":"1.7.2",
+ "tileheight":16,
+ "tiles":[
+        {
+         "id":0,
+         "properties":[
+                {
+                 "name":"collides",
+                 "type":"bool",
+                 "value":true
+                }]
+        }],
+ "tilewidth":16,
+ "transparentcolor":"#11282e",
+ "type":"tileset",
+ "version":"1.6"
+}

@@ -1,6 +1,29 @@
 export default {
-  type: Phaser.AUTO,  // Specify the underlying browser rendering engine (AUTO, CANVAS, WEBGL)
-                      // AUTO will attempt to use WEBGL, but if not available it'll default to CANVAS
-  width: 800,   // Game width in pixels
-  height: 600,  // Game height in pixels
-};
+  type: Phaser.WEBGL,
+  backgroundColor: '#00e4ff',
+  parent: 'game',
+  scale: {
+    width: window.innerWidth,
+    height: window.innerHeight,
+  },
+  physics: {
+    default: 'arcade',
+    arcade: {
+      debug: true,
+    },
+  },
+  render: {
+    pixelArt: true,
+    antialiasGL: false
+  },
+  callbacks: {
+    postBoot: () => {
+      window.sizeChanged()
+    }
+  },
+  canvasStyle: `display: block; width: 100%; height: 100%;`,
+  autoFocus: true,
+  audio: {
+    disableWebAudio: false,
+  }
+}
